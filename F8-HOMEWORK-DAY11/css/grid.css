@@ -289,11 +289,13 @@ p {
     color: #BECCC7;
 }
 /* card items */
-.card{
+.service-card,
+.team-card{
     position: relative;
     overflow: hidden
 }
 .card__img{
+    display: block;
     width: 100%;
     object-fit: cover;
     object-position: top;
@@ -836,6 +838,7 @@ p {
     width: 36px;
     height: 36px;
     background: #beccc7;
+    color: var(--black);
     transition:
     background-color .3s ease,
     color .3s ease;
@@ -1225,55 +1228,58 @@ p {
         --row-cols-number: 6;
     }
     /* gutter */
-    .g-xl-0,
-    .gx-xl-0{
+    .g-lg-0,
+    .gx-lg-0{
         --spacer-x: 0;
     }
-    .g-xl-1,
-    .gx-xl-1{
+    .g-lg-1,
+    .gx-lg-1{
         --spacer-x: calc(var(--spacer)* 0.25) ;
     }
-    .g-xl-2,
-    .gx-xl-2{
+    .g-lg-2,
+    .gx-lg-2{
         --spacer-x: calc(var(--spacer)* 0.5) ;
     }
-    .g-xl-3,
-    .gx-xl-3{
+    .g-lg-3,
+    .gx-lg-3{
         --spacer-x: calc(var(--spacer)* 1) ;
     }
-    .g-xl-4,
-    .gx-xl-4{
+    .g-lg-4,
+    .gx-lg-4{
         --spacer-x: calc(var(--spacer)* 1.5) ;
     }
-    .g-xl-5,
-    .gx-xl-5{
+    .g-lg-5,
+    .gx-lg-5{
         --spacer-x: calc(var(--spacer)* 3) ;
     }
-    .g-xl-0,
-    .gy-xl-0{
+    .g-lg-0,
+    .gy-lg-0{
         --spacer-y: 0;
     }
-    .g-xl-1,
-    .gy-xl-1{
+    .g-lg-1,
+    .gy-lg-1{
         --spacer-y: calc(var(--spacer)* 0.25) ;
     }
-    .g-xl-2,
-    .gy-xl-2{
+    .g-lg-2,
+    .gy-lg-2{
         --spacer-y: calc(var(--spacer)* 0.5) ;
     }
-    .g-xl-3,
-    .gy-xl-3{
+    .g-lg-3,
+    .gy-lg-3{
         --spacer-y: calc(var(--spacer)* 1) ;
     }
-    .g-xl-4,
-    .gy-xl-4{
+    .g-lg-4,
+    .gy-lg-4{
         --spacer-y: calc(var(--spacer)* 1.5) ;
     }
-    .g-xl-5,
-    .gy-xl-5{
+    .g-lg-5,
+    .gy-lg-5{
         --spacer-y: calc(var(--spacer)* 3) ;
     }
     /* offset */
+     .offset-lg-0{
+    --col-offset:0;
+    }
      .offset-lg-1{
     --col-offset:1;
     }
@@ -1313,6 +1319,20 @@ p {
     .container{
     max-width: 720px;}
     /* edit viewport */
+      .cta__title{
+        font-size: 30px;
+      }  
+    .cta__desc{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .footer__bottom-copyright{
+        margin-bottom: 20px;
+    }
+    .social-links{
+        justify-content: center;
+        padding: 30px 0;
+    }
     .award__card{
         margin-bottom: 30px;
     }
@@ -1326,17 +1346,11 @@ p {
     .shape{
         margin-top: 100px;
     }
-    .shape__img--green {
-        width: 300px;
-        height: 300px;
+    .hero{
+        padding: 0;
+    }
     }
 
-    .hero{
-    padding: 200px 0;
-    }
-    .shape>img {
-        right: -180px;
-    }
     .col-md-1{
     --column-number: 1;
     }
@@ -1393,52 +1407,52 @@ p {
         --row-cols-number: 6;
     }
     /* gutter */
-    .g-lg-0,
-    .gx-lg-0{
+    .g-md-0,
+    .gx-md-0{
         --spacer-x: 0;
     }
-    .g-lg-1,
-    .gx-lg-1{lg-
+    .g-md-1,
+    .gx-md-1{
         --spacer-x: calc(var(--spacer)* 0.25) ;
     }
-    .g-lg-2,
-    .gx-lg-2{
+    .g-md-2,
+    .gx-md-2{
         --spacer-x: calc(var(--spacer)* 0.5) ;
     }
-    .g-lg-3,
-    .gx-lg-3{
+    .g-md-3,
+    .gx-md-3{
         --spacer-x: calc(var(--spacer)* 1) ;
     }
-    .g-lg-4,
-    .gx-lg-4{
+    .g-md-4,
+    .gx-md-4{
         --spacer-x: calc(var(--spacer)* 1.5) ;
     }
-    .g-lg-5,
-    .gx-lg-5{
+    .g-md-5,
+    .gx-md-5{
         --spacer-x: calc(var(--spacer)* 3) ;
     }
-    .g-lg-0,
-    .gy-lg-0{
+    .g-md-0,
+    .gy-md-0{
         --spacer-y: 0;
     }
-    .g-lg-1,
-    .gy-lg-1{
+    .g-md-1,
+    .gy-md-1{
         --spacer-y: calc(var(--spacer)* 0.25) ;
     }
-    .g-lg-2,
-    .gy-lg-2{
+    .g-md-2,
+    .gy-md-2{
         --spacer-y: calc(var(--spacer)* 0.5) ;
     }
     .g-lg-3,
     .gy-lg-3{
         --spacer-y: calc(var(--spacer)* 1) ;
     }
-    .g-lg-4,
-    .gy-lg-4{
+    .g-md-4,
+    .gy-md-4{
         --spacer-y: calc(var(--spacer)* 1.5) ;
     }
-    .g-lg-5,
-    .gy-lg-5{
+    .g-md-5,
+    .gy-md-5{
         --spacer-y: calc(var(--spacer)* 3) ;
     }
     .offset-md-0{
@@ -1477,11 +1491,17 @@ p {
     .offset-md-11{
         --col-offset:11;
     }
-}
 /* sm */
 @media (max-width: 761.98px){
     .container{
     max-width: 540px;}
+    .shape__img--green {
+    height: 376px;
+    width: 373px;}
+    .shape>img {
+        display: none;
+    }
+    
     .col-sm-1{
     --column-number: 1;
     }
