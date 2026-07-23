@@ -1,0 +1,39 @@
+:root{
+    --primary: rgb(213, 189, 7);
+    --font--header: times new roman;
+    --item: rgb(98, 68, 4);
+    --hover: red; 
+}
+.homework__title{
+    text-align: center;
+    text-decoration: underline;
+    color: var(--primary);
+    font-family: var(--font--header);
+}
+.homework__day11{
+    background-color: beige;
+    padding: 20px;
+    border: 2px solid black;
+}
+.homework__title-day11{
+    text-align: center;
+}
+.homework__list{
+    display: block;
+    text-decoration: none;
+}
+.homework__item{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px   
+}
+.homework__item a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--item);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.homework__item:hover a{
+    color: var(--hover);
+}
